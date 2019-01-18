@@ -1,0 +1,44 @@
+{
+  "name": "webpack-typescript-starter",
+  "version": "0.0.1",
+  "description": "A simple Webpack 4 starter with TypeScript transpilation",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --port 9000 --inline --progress --profile --colors --watch --content-base src/ --mode development",
+    "build": "webpack --config webpack.config.js --mode production",
+    "build.prod": "webpack --config webpack.config.js -p",
+    "test": "karma start karma.config.js"
+  },
+  "keywords": [
+    "webpack",
+    "webpack4",
+    "typescript"
+  ],
+  "author": "Juri Strumpflohner",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jasmine": "3.3.6",
+    "@types/jquery": "^3.3.29",
+    "@types/node": "10.12.18",
+    "awesome-typescript-loader": "5.2.1",
+    "jasmine-core": "3.3.0",
+    "karma": "3.1.4",
+    "karma-jasmine": "2.0.1",
+    "karma-phantomjs-launcher": "1.0.4",
+    "karma-webpack": "3.0.5",
+    "source-map-loader": "0.2.4",
+    "tslint": "5.12.1",
+    "tslint-loader": "3.6.0",
+    "typescript": "3.2.4",
+    "webpack": "4.28.4",
+    "webpack-cli": "3.2.1",
+    "webpack-dev-server": "3.1.14"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.120",
+    "@types/underscore": "^1.8.9",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.11",
+    "underscore": "^1.9.1"
+  }
+}
