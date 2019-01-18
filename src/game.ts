@@ -3,9 +3,9 @@ import _ from 'lodash';
 export default class Game {
     size: number;
     winnerIndex: number;
-    score: number = 0;
+    score = 0;
 
-    constructor(size: number = 8) {
+    constructor(size: number = 9) {
         this.size = size;       
         this.shuffle(); 
     }
