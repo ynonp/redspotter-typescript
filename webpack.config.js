@@ -8,7 +8,7 @@ module.exports = {
     context: ROOT,
 
     entry: {
-        'main': './main.ts'
+        'main': './main.tsx'
     },
     
     output: {
@@ -17,7 +17,7 @@ module.exports = {
     },
 
     resolve: {
-        extensions: ['.ts', '.js'],
+        extensions: ['.ts', '.js', '.tsx'],
         modules: [
             ROOT,
             'node_modules'
@@ -45,7 +45,7 @@ module.exports = {
             * LOADERS
             *****************/
             {
-                test: /\.ts$/,
+                test: /\.tsx?$/,
                 exclude: [ /node_modules/ ],
                 use: 'awesome-typescript-loader'
             }
